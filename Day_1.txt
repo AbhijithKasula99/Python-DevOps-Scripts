@@ -1,0 +1,81 @@
+#Write your code below this line 👇
+# Figured out print function
+print("Hello Kasula, Welcome back!")
+# Hello Kasula, Welcome back! is a string of characters
+
+# Printing multiple lines
+print("Day 1 - Python Print Function")
+print("The function is declared like this:")
+print("print('what to print')")
+
+# Printing multiple lines using one print function
+print("Hello World!\nHello World!\nHello World!")
+
+# String Concatenation
+print("Abhijith" + "Kasula")
+print("Abhijith " + "Kasula")
+print("Abhijith" + " " + "Kasula")
+
+# Input Function
+# print("Hello " + input("What is your name?"))
+# Ctrl + / for commenting
+# Ctrl + Z for undo
+
+# Count the number of characters in your name
+# We did that using len() function in python
+# print(len((input("What is your name? "))))
+
+
+
+-------------------
+
+'''
+Once the input is given,
+the input function stores it and 
+we can use it by assigning it to a variable 
+'''
+name = input("What is your name? ")
+print(name)
+length = len(name)
+print(length)
+
+name = "Kasula"
+print(name)
+
+name = "Abhijith"
+print(name)
+# We can get to know that the Python is a top-down dynamic language.
+
+# Coding Exercise
+
+a = input("a: ")
+b = input("b: ")
+
+c = a
+a = b
+b = c
+
+print("a = " + a)
+print("b = " + b)
+
+# Name your variables in a way that it makes sense to you.
+# Don't use space, use '_' to give space
+# Don't start with numbers or use built-in functions
+
+
+-----------------
+
+Band Name Generator
+
+#1. Create a greeting for your program.
+print("Welcome to the Band Name Generator")
+#2. Ask the user for the city that they grew up in.
+city = input("Which city did you grow up in? ")
+#3. Ask the user for the name of a pet.
+pet = input("What is the name of your pet? ")
+#4. Combine the name of their city and pet and show them their band name.
+band = city + " " + pet
+#5. Make sure the input cursor shows on a new line:
+print("Your band name is"+ " "+band)
+
+------------------
