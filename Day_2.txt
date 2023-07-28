@@ -1,0 +1,108 @@
+Day-2
+
+
+#Data Types
+
+#String
+"Hello"
+
+#Integer
+a = 123
+type(a)
+
+#Float
+b = 3.14159
+type(b)
+
+#Boolean
+True
+False
+
+#Type Errors
+num_char = len(input("What is your name? "))
+new_num_char = str(num_char)
+print("Your name has " + new_num_char + " characters.")
+
+#Type Checking
+type(new_num_char)
+type(num_char)
+
+#Type Conversion
+str()
+int()
+float()
+bool()
+
+# Coding Challenge
+number = input("Enter the two digit number: ")
+first = number[0]
+second = number[1]
+print(type(number))
+result = int(first) + int(second)
+print(result)
+
+# Maths Operations
+3 + 5
+7 - 4
+3 * 2
+6 / 3
+2**3
+
+# PEMDASLR (Parentheses, Exponents, Multiply & Divide, Add & Subtract, Left to Right)
+# ()
+# **
+# * /
+# + -
+
+print(3 * (3 + 3) / 3 - 3)
+
+# BMI Calculator
+height = input("Enter your height in meters: ")
+weight = input("Enter your weight in kilograms: ")
+height = float(height)
+weight = float(weight)
+# BMI = weight / height**2 An alternative
+BMI = round(weight / (height * height), 3)  # Used round to round off BMI
+print("Your Body Mass Index is " + str(BMI))
+
+#Rounding Numbers
+round(4.6666666666)
+
+#Floor division
+9 // 4
+
+#Shorthand Operators
+# a += 2  short for a = a + 2
+# -=
+# *=
+# /=
+
+#f-Strings
+score = 0
+height = 1.8
+isWinning = True
+print(
+    f"your score is {score}, your height is {height}, you are winning is {isWinning}"
+)
+
+# Coding Challenge - Life in Weeks
+
+age = input("What is your current age: ")
+end = 90
+
+years = end - int(age)
+months = (end * 12) - (int(age) * 12)
+days = (end * 12 * 365) - (int(age) * 12 * 365)
+
+print(f"You have {years} years, {months} months and {days} days left")
+
+# Project - Tip Calculator
+
+print("Welcome to the tip calculator")
+bill = float(input("What was the total bill? $"))
+tip = float(input("What percent of tip would you like to tip 10, 12 or 15? "))
+people = int(input("How many people are splitting the bill? "))
+total = round((tip / 100 * bill) + bill, 2)
+each = round((total / people), 2)
+print(f"The total is ${total}")
+print(f"Each person needs to pay ${each}")
