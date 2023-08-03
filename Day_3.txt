@@ -1,0 +1,106 @@
+Day 3 Python 
+
+# Ticket Eligibility Checker
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+
+if height > 120:
+  print("You can ride the coaster")
+else:
+  print("Please grow to ride")
+
+Odd or Even 
+
+num = int(input("Enter the Number to check: "))
+
+if num % 2 == 0:
+  print("The number is an even number!")
+else:
+  print("This is an odd number!")
+
+--------------------------------------------------
+
+# Nested Ticket Eligibility Checker
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+
+if height > 120:
+  print("You can ride the coaster")
+  age = int(input("What is you age? "))
+  if age < 18:
+    print("The cost of ticket is $7")
+  else:
+    print("The cost of ticket is $12")
+else:
+  print("Please grow to ride")
+
+------------------------------------------------------------
+
+# Nested Elif Statements
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+
+if height > 120:
+  print("You can ride the coaster")
+  age = int(input("What is you age? "))
+  if age < 12:
+    print("The cost of ticket is $7")
+  elif age <= 18 :
+    print("The cost of ticket is $12")
+  else:
+    print("The cost of ticket is $18")
+else:
+  print("Please grow to ride")
+
+----------------------------------------
+
+# BMI 2.0
+
+height = float(input("Enter your height in m: "))
+weight = float(input("Enter your weight in kg: "))
+
+BMI = round(weight / (height**2), 3)
+
+if (BMI < 18.5):
+  print("Your BMI is: "+str(BMI)+" and you are in underweight category")
+elif (BMI > 18.5 and BMI < 25):  
+  print("Your BMI is: "+str(BMI)+" and you are in normal category")
+elif (BMI >= 25 and BMI < 30):
+  print("Your BMI is: "+str(BMI)+" and you are in overweight category")
+elif (BMI >= 30 and BMI < 35):
+  print("Your BMI is: "+str(BMI)+" and you are in obese category")
+elif (BMI >= 35):
+  print("Your BMI is: "+str(BMI)+" and you are in clinically obese category")
+
+# Use f-strings where there is int or float to be printed in print statement
+
+if (BMI < 18.5):
+  print(f"Your BMI is: {BMI} and you are in underweight category")
+elif (BMI > 18.5 and BMI < 25):  
+  print(f"Your BMI is: {BMI} and you are in normal category")
+elif (BMI >= 25 and BMI < 30):
+  print(f"Your BMI is: {BMI} and you are in overweight category")
+elif (BMI >= 30 and BMI < 35):
+  print(f"Your BMI is: {BMI} and you are in obese category")
+elif (BMI >= 35):
+  print(f"Your BMI is: {BMI} and you are in clinically obese category")
+
+------------------------------------------
+
+# Leap Year
+
+year = int(input("Which year do you want to check? "))
+
+if year % 4 == 0:
+  if year % 100 == 0:
+    if year % 400 == 0:
+      print(f"{year} is a Leap Year")
+    else:
+      print(f"{year} is not a leap year")
+  else:
+    print(f"{year} is a Leap Year")
+else:
+  print(f"{year} is not a leap year")
