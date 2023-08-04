@@ -104,3 +104,155 @@ if year % 4 == 0:
     print(f"{year} is a Leap Year")
 else:
   print(f"{year} is not a leap year")
+
+
+------------------------
+
+# Multiple if statements 
+# Relate this case to Rameshwaram Cafe!!
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+bill = 0 # We need to increase the price so we are storing it here
+
+if height > 120:
+  print("You can ride the coaster")
+  age = int(input("What is you age? "))
+  if age < 12:
+    bill = 7
+    print(f"The cost of ticket is ${bill}")
+  elif age <= 18 :
+    bill = 12
+    print(f"The cost of ticket is ${bill}")
+  else:
+    bill = 18
+    print(f"The cost of ticket is ${bill}")
+
+  # Extra Charge for Photos
+
+  photo = input("Do you want your Photos Y or N? ")
+  # if yes charge $3 extra
+  if photo == "Y":
+    bill += 3 # This is same as bill = bill + 3
+    
+  print(f"The cost of ticket is ${bill}")
+
+else:
+  print("Please grow to ride")
+
+----------------------------------------
+
+# Pizza Order Practice 
+
+print("Welcome to Python Pizza Deliveries!")
+size = input("Enter the size S, M or L: ")
+pep = input("Do you want extra Pepperoni Y or N? ")
+cheese = input("Do you want extra cheese Y or N? ")
+bill = 0
+
+if size == "S":
+  bill = 15
+  if pep == "Y":
+    bill += 2
+  if cheese == "Y":
+    bill += 1
+  print(f"This is a ${bill} pizza!")
+if size == "M":
+  bill = 20
+  if pep == "Y":
+    bill += 3
+  if cheese == "Y":
+    bill += 1
+  print(f"This is a ${bill} pizza!")
+if size == "L":
+  bill = 25
+  if pep == "Y":
+    bill += 2
+  if cheese == "Y":
+    bill += 1
+  print(f"This is a ${bill} pizza!")
+
+------------------------------------------
+
+# Rollercoaster one more high age category
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+bill = 0 # We need to increase the price so we are storing it here
+
+if height > 120:
+  print("You can ride the coaster")
+  age = int(input("What is you age? "))
+  if age < 12:
+    bill = 7
+    print(f"The cost of ticket is ${bill}")
+  elif age <= 18 :
+    bill = 12
+    print(f"The cost of ticket is ${bill}")
+  elif age >= 45 and age <= 55:
+    bill = 0
+    print(f"The cost of ticket is ${bill}")
+  else:
+    bill = 18
+    print(f"The cost of ticket is ${bill}")
+
+  # Extra Charge for Photos
+
+  photo = input("Do you want your Photos Y or N? ")
+  # if yes charge $3 extra
+  if photo == "Y":
+    bill += 3 # This is same as bill = bill + 3
+    
+  print(f"The cost of ticket is ${bill}")
+
+else:
+  print("Please grow to ride")
+
+------------------------------------------
+
+# Love Calculator 
+
+print("Welcome to the Love Calculator!")
+you = str(input("Enter your Name: \n"))
+partner = str(input("Enter your partners name: \n"))
+
+# Convert both the names to lower case
+you = you.lower()
+partner = partner.lower()
+
+# Combined both the names
+love = you+" "+partner
+# print(love)
+
+# Count the number of times the alphabets are repeated
+t = love.count("t")
+r = love.count("r")
+u = love.count("u")
+e = love.count("e")
+
+true = t + r + u + e
+# print(f"total is {true}")
+
+l = love.count("l")
+o = love.count("o")
+v = love.count("v")
+e = love.count("e")
+
+love = l + o + v + e
+# print(f"total is {love}")
+
+# Concatenate into two digit numbers
+score = str(true) + str(love)
+score = int(score)
+
+# Run the if statements
+if score <=10 or score >= 90:
+  print(f"Your love score is {score}, you go together like coke and mentos")
+
+elif score >= 40 and score <= 50:
+  print(f"Your score is {score}, you both are alright together")
+
+else:
+  print(f"Your score is {love}")
+
+--------------------------------------
