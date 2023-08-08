@@ -92,3 +92,34 @@ print(states)
 
 ------------------------------------------------
 
+Who is going to pay the bill??
+
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+
+import random
+num_items = len(names) # This stores the length of numbers
+
+random_choice = random.randint(0, num_items - 1) 
+# Using len() function to include the first to last element of the list as it can vary
+
+# We use '-1' because the index of elements starts from zero
+
+name = names[random_choice]
+# The number stored in random_choice is the index of the name chosen from the list
+
+print(name + ' is going to pay the bill today!')
+
+# Shortcut is .choice() function in random module
+
+print(random.choice(names)+' is going to pay the bill')
+
+---------------------------------------------
+
+# Nested Lists
+
+num = [1,2,3,4]
+char = ['a','b','c','d']
+
+str = [num, char]
+print(str)
