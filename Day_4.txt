@@ -1,0 +1,94 @@
+PYTHON DAY-4
+
+Module is a set of code or functions stored in .py extension file. 
+A library is a collection related modules or packages.
+
+Here we are using random module to get our program running, 
+we import those modules to use them.
+
+import random
+
+randomIntegeter = random.randint(1, 10) # .randint() is an inbuilt function in the module.
+print(randomIntegeter) 
+
+randomFloat = random.random() * 5
+print(randomFloat)
+
+love_score = random.randint(1, 100)
+print(f"Your love score is {love_score}")
+
+-------------------------------------------
+
+HEAD OR TAILS 
+
+import random 
+
+out = random.randint(0,1)
+
+if out == 1:
+	print("Heads")
+else:
+	print("Tails")
+
+-------------------------------------------
+
+# Lists
+
+'''
+This is a data structure (way of organizing and storing data).
+They are represented by [] brackets,
+if we have to store multiple elements in one variable this is the best.
+Each element has index ranging from 0 to the end number.
+
+Let's say if we want to create a list of 50 states in USA then this is how it can be done.
+'''
+
+states = ['Delaware', 'Pennsylvania', 'New Jersey', 'Georgia', 'Connecticut',
+ 'Massachusetts', 'Maryland', 'South Carolina', 'New Hampshire', 'Virginia',
+ 'New York', 'North Carolina', 'Rhode Island', 'Vermont', 'Kentucky',
+ 'Tennessee', 'Ohio', 'Louisiana', 'Indiana', 'Mississippi', 'Illinois',
+ 'Alabama', 'Maine', 'Missouri', 'Arkansas', 'Michigan', 'Florida', 'Texas',
+ 'Iowa', 'Wisconsin', 'California', 'Minnesota', 'Oregon', 'Kansas',
+ 'West Virginia', 'Nevada', 'Nebraska', 'Colorado', 'North Dakota',
+ 'South Dakota', 'Montana', 'Washington', 'Idaho', 'Wyoming', 'Utah',
+ 'Oklahoma', 'New Mexico', 'Arizona', 'Alaska', 'Hawaii']
+
+print(states)
+
+# To remove last item from the list 
+states.pop()
+print(states)
+
+# To remove the first element from the list
+states.pop(0)
+print(states)
+
+# Removing all elements from the list
+states.clear()
+print(states)
+
+# Inserting elements into the list
+states = []
+states.insert(0,'Delaware')
+print(states)
+
+# Printing the count of elements from the list
+print(states.count('Delaware'))
+
+# Adding an element to a list
+states.append('Kasulapuram')
+print(states)
+
+# Append without index adds from the last, what if we want to add it somewhere else
+states.insert(5,'Kasulaverse')
+print(states)
+
+# Try removing Kasulaverse and Kasulapuram
+states.remove('Kasulaverse')
+print(states)
+
+states.remove('Kasulapuram')
+print(states)
+
+------------------------------------------------
+
