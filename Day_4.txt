@@ -123,3 +123,24 @@ char = ['a','b','c','d']
 
 str = [num, char]
 print(str)
+
+--------------------------------------------
+
+# Treasure Map
+
+row1 = ["\U0001f600","\U0001f600","\U0001f600"]
+row2 = ["\U0001f600","\U0001f600","\U0001f600"]
+row3 = ["\U0001f600","\U0001f600","\U0001f600"]
+map = [row1,row2,row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+
+column =  int(position[1]) 
+# Taking the position and splitting into row and col, str to int too
+row = int(position[0])
+
+sel_row = map[column - 1] # Index starts from zero
+sel_row[row - 1] = "X" # At this row index it must be changed to X
+
+print(f"{row1}\n{row2}\n{row3}")
+print(f"The treasure is in row {row} and column {column}")
