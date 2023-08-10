@@ -1,0 +1,34 @@
+FOR LOOPS
+
+# A simple For Loop
+num = [1,2,3,4,5,6,7,8,9]
+
+for n in num:
+  print(n)
+# For each element in the list it prints the element from the list 
+
+--------------------------------
+
+Average Height Calculator without using sum() and len() function
+
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+  print(student_heights[n])
+
+total_height = 0 
+for height in student_heights:
+  total_height = total_height + height # Alternative: total_height += height
+
+total_students = 0   
+for n in student_heights:
+  total_students = total_students + 1 # Alternative: total_students += 1
+
+print(f"The sum of all heights is {total_height}")
+print(f"The total number of students are {total_students}")
+
+avg = round((total_height / total_students),3)
+
+print(f"The average height of the bunch is {avg}")
+
+-----------------------------------------
