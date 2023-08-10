@@ -144,3 +144,68 @@ sel_row[row - 1] = "X" # At this row index it must be changed to X
 
 print(f"{row1}\n{row2}\n{row3}")
 print(f"The treasure is in row {row} and column {column}")
+
+------------------------------------------
+
+# Rock Paper Scissor
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+# We are creating a list of game input images
+images = [rock,paper,scissors]
+
+# User Input
+user = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors. "))
+print(f"User chose {user}")
+print(images[user])
+
+# Computer input
+import random
+comp = random.randint(0,2)
+print(f"Computer chose {comp}")
+print(images[comp])
+
+# Comparisons
+if user == 0 and comp == 1:
+    print("You Lost!")
+elif user == 0 and comp == 2:
+    print("You Won!")
+elif user == 1 and comp == 0:
+    print("You Won!")
+elif user == 1 and comp == 2:
+    print("You Lost!")
+elif user == 2 and comp == 0:
+    print("You Lost!")
+elif user == 2 and comp == 1:
+    print("You Won!")
+elif user == comp:
+    print("Draw")
+else:
+    print("Invalid choice")
+
+----------------------------------------
